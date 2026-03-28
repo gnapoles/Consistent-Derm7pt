@@ -135,7 +135,7 @@ To switch to the asymmetric strategy, replace the split filenames with the `asym
 
 ## Citation
 
-If you use Derm7pt+ in your research, please cite:
+If you use Derm7pt+ in your research, please cite our paper:
 
 ```bibtex
 @article{napoles2025derm7pt,
@@ -147,8 +147,25 @@ If you use Derm7pt+ in your research, please cite:
 }
 ```
 
+Derm7pt+ is derived from the original Derm7pt dataset. If you use the images or metadata, we would kindly ask you to cite the original dataset paper:
+
+```bibtex
+@article{Kawahara2018-7pt,
+  author    = {Kawahara, Jeremy and Daneshvar, Sara and Argenziano, Giuseppe and Hamarneh, Ghassan},
+  title     = {Seven-Point Checklist and Skin Lesion Classification Using Multitask Multimodal Neural Nets},
+  journal   = {IEEE Journal of Biomedical and Health Informatics},
+  volume    = {23},
+  number    = {2},
+  pages     = {538--546},
+  year      = {2019},
+  doi       = {10.1109/JBHI.2018.2824327}
+}
+```
+
+The original Derm7pt images are distributed under a CC BY-NC-ND 4.0 license and can be downloaded from [derm.cs.sfu.ca](http://derm.cs.sfu.ca).
+
 ---
 
 ## License
 
-The images and annotations in this repository are released under the MIT License. Users are responsible for ensuring their use complies with any applicable institutional or ethical requirements for dermoscopic image data.
+The split files and metadata in this repository are released under the MIT License. The dermoscopic images are derived from the original Derm7pt dataset and are subject to its CC BY-NC-ND 4.0 license. Users are responsible for ensuring their use complies with the terms of that license and any applicable institutional or ethical requirements for dermoscopic image data.
