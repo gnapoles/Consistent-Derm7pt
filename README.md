@@ -139,7 +139,7 @@ To switch to the asymmetric strategy, replace the split filenames with the `asym
 If you use Derm7pt+ in your research, please cite our paper:
 
 ```bibtex
-@article{napoles2025derm7pt,
+@article{napoles2026derm7pt,
   title     = {Concept Inconsistency in Dermoscopic Concept Bottleneck Models:
                A Rough-Set Analysis of the Derm7pt Dataset},
   author    = {N\'apoles, Gonzalo and Grau, Isel and Salgueiro, Yamisleydi},
