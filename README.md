@@ -39,6 +39,7 @@ derm7pt-plus/
 │   ├── asymmetric_train_indexes_filtered.csv
 │   ├── asymmetric_valid_indexes_filtered.csv
 │   └── asymmetric_test_indexes_filtered.csv
+├── Derm7pt_CBM.ipynb
 └── README.md
 ```
 
@@ -143,7 +144,7 @@ If you use Derm7pt+ in your research, please cite our paper:
                A Rough-Set Analysis of the Derm7pt Dataset},
   author    = {N\'apoles, Gonzalo and Grau, Isel and Salgueiro, Yamisleydi},
   journal   = {[TBA]},
-  year      = {2025}
+  year      = {2026}
 }
 ```
 
