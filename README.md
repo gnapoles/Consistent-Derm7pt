@@ -49,7 +49,7 @@ All images have been manually cropped to remove border artifacts and center the 
 
 ## Filtering Strategies
 
-**Symmetric removal** restricts the dataset to images whose concept profile maps unambiguously to a single diagnosis label. This yields 705 cases, a perfect quality of classification (γ = 1.0), and no hard accuracy ceiling. The cost is the removal of 136 melanoma cases (54.0% of all melanoma), worsening class imbalance from 1:3.0 to 1:5.1.
+**Symmetric removal** restricts the dataset to images whose concept profile maps unambiguously to a single diagnosis label. This yields 705 cases, a perfect quality of classification (γ = 1.0), and no hard accuracy ceiling. The cost is the removal of 136 melanoma cases (54.0% of all melanoma cases), worsening class imbalance from 1:3.0 to 1:5.1.
 
 **Asymmetric removal** retains all melanoma cases from the boundary region while removing only the conflicting non-melanoma samples. This embeds the clinical prior that false negatives carry a higher cost than false positives in a screening setting. All 252 melanoma cases are preserved and the class ratio improves to 1:2.3. A residual accuracy ceiling of 83.2% applies.
 
