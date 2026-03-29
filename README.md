@@ -64,7 +64,6 @@ The file contains 1,011 rows (one per case) and 16 columns. Rows are zero-indexe
 | Column | Description |
 |---|---|
 | `diagnosis` | Full diagnostic label (e.g., `melanoma`, `clark nevus`, `seborrheic keratosis`). For binary melanoma/non-melanoma classification, all values starting with `melanoma` map to the positive class. |
-| `seven_point_score` | Total 7-point checklist score (integer) |
 | `pigment_network` | `typical`, `atypical`, `absent` |
 | `streaks` | `regular`, `irregular`, `absent` |
 | `pigmentation` | `diffuse_regular`, `localized_regular`, `localized_irregular`, `diffuse_irregular`, `absent` |
@@ -72,12 +71,6 @@ The file contains 1,011 rows (one per case) and 16 columns. Rows are zero-indexe
 | `dots_and_globules` | `regular`, `irregular`, `absent` |
 | `blue_whitish_veil` | `present`, `absent` |
 | `vascular_structures` | `comma`, `wreath`, `arborizing`, `hairpin`, `dotted`, `within_regression`, `linear_irregular`, `absent` |
-| `level_of_diagnostic_difficulty` | `low`, `medium`, `high` |
-| `elevation` | Lesion elevation descriptor |
-| `location` | Anatomical location |
-| `sex` | Patient sex |
-| `management` | Clinical management decision |
-| `clinic` | Filename of the clinical photograph (relative to `images/`) |
 | `derm` | Filename of the dermoscopic image (relative to `images/`) |
 
 ---
