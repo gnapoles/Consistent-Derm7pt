@@ -39,6 +39,7 @@ derm7pt-plus/
 │   ├── asymmetric_train_indexes_filtered.csv
 │   ├── asymmetric_valid_indexes_filtered.csv
 │   └── asymmetric_test_indexes_filtered.csv
+├── Derm7pt_CBM.ipynb
 └── README.md
 ```
 
@@ -48,7 +49,7 @@ All images have been manually cropped to remove border artifacts and center the 
 
 ## Filtering Strategies
 
-**Symmetric removal** restricts the dataset to images whose concept profile maps unambiguously to a single diagnosis label. This yields 705 cases, a perfect quality of classification (γ = 1.0), and no hard accuracy ceiling. The cost is the removal of 136 melanoma cases (54.0% of all melanoma), worsening class imbalance from 1:3.0 to 1:5.1.
+**Symmetric removal** restricts the dataset to images whose concept profile maps unambiguously to a single diagnosis label. This yields 705 cases, a perfect quality of classification (γ = 1.0), and no hard accuracy ceiling. The cost is the removal of 136 melanoma cases (54.0% of all melanoma cases), worsening class imbalance from 1:3.0 to 1:5.1.
 
 **Asymmetric removal** retains all melanoma cases from the boundary region while removing only the conflicting non-melanoma samples. This embeds the clinical prior that false negatives carry a higher cost than false positives in a screening setting. All 252 melanoma cases are preserved and the class ratio improves to 1:2.3. A residual accuracy ceiling of 83.2% applies.
 
@@ -135,20 +136,37 @@ To switch to the asymmetric strategy, replace the split filenames with the `asym
 
 ## Citation
 
-If you use Derm7pt+ in your research, please cite:
+If you use Derm7pt+ in your research, please cite our paper:
 
 ```bibtex
-@article{napoles2025derm7pt,
+@article{napoles2026derm7pt,
   title     = {Concept Inconsistency in Dermoscopic Concept Bottleneck Models:
                A Rough-Set Analysis of the Derm7pt Dataset},
   author    = {N\'apoles, Gonzalo and Grau, Isel and Salgueiro, Yamisleydi},
   journal   = {[TBA]},
-  year      = {2025}
+  year      = {2026}
 }
 ```
+
+Derm7pt+ is derived from the original Derm7pt dataset. If you use the images or metadata, we would kindly ask you to cite the original dataset paper:
+
+```bibtex
+@article{Kawahara2018-7pt,
+  author    = {Kawahara, Jeremy and Daneshvar, Sara and Argenziano, Giuseppe and Hamarneh, Ghassan},
+  title     = {Seven-Point Checklist and Skin Lesion Classification Using Multitask Multimodal Neural Nets},
+  journal   = {IEEE Journal of Biomedical and Health Informatics},
+  volume    = {23},
+  number    = {2},
+  pages     = {538--546},
+  year      = {2019},
+  doi       = {10.1109/JBHI.2018.2824327}
+}
+```
+
+The original Derm7pt images are distributed under a CC BY-NC-ND 4.0 license and can be downloaded from [derm.cs.sfu.ca](http://derm.cs.sfu.ca).
 
 ---
 
 ## License
 
-The images and annotations in this repository are released under the MIT License. Users are responsible for ensuring their use complies with any applicable institutional or ethical requirements for dermoscopic image data.
+The split files and metadata in this repository are released under the MIT License. The dermoscopic images are derived from the original Derm7pt dataset and are subject to its CC BY-NC-ND 4.0 license. Users are responsible for ensuring their use complies with the terms of that license and any applicable institutional or ethical requirements for dermoscopic image data.
