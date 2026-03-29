@@ -64,16 +64,16 @@ The file contains 1,011 rows (one per case) and 16 columns. Rows are zero-indexe
 | Column | Description |
 |---|---|
 | `diagnosis` | Full diagnostic label (e.g., `melanoma`, `clark nevus`, `seborrheic keratosis`). For binary melanoma/non-melanoma classification, all values starting with `melanoma` map to the positive class. |
-| `pigment_network` | A mesh-like grid of pigmented lines overlying a lighter background, formed by melanin distributed along the rete ridges. A typical network shows regular meshwork and uniform color, while an atypical network is irregular in shape or color and abruptly terminates at the lesion periphery. Values: `typical`, `atypical`, `absent` |
+| `pigment_network` | A mesh-like grid of pigmented lines overlying a lighter background. Atypicality is characterized by irregular meshes, thick lines, and abrupt termination at the lesion periphery, and is associated with melanocytic malignancy. Values: `typical`, `atypical`, `absent` |
 | `streaks` | Radial projections at the lesion border arising from confluent junctional nests or radial melanocyte growth. Regular streaks are uniformly distributed around the periphery, while irregular streaks are focal or asymmetrically distributed and carry higher diagnostic significance for melanoma. Values: `regular`, `irregular`, `absent` |
 | `pigmentation` | The distribution and uniformity of coloration within the lesion, reflecting melanin density across the epidermis and dermis. Regular pigmentation is homogeneous and symmetrically distributed, while irregular pigmentation involves abrupt color variations or eccentric darkening associated with atypical melanocytic proliferation. Values: `diffuse_regular`, `localized_regular`, `localized_irregular`, `diffuse_irregular`, `absent` |
 | `regression_structures` | Areas where melanocytic proliferation has undergone partial or complete regression, replaced by fibrosis or melanophages. Blue areas correspond to dermal melanophages, white areas to fibrosis, and combinations indicate the co-occurrence of both. Values: `blue_areas`, `white_areas`, `combinations`, `absent` |
 | `dots_and_globules` | Small round to oval structures corresponding to pigment aggregates in the epidermis or dermis. Regular variants are uniformly sized and symmetrically distributed, while irregular variants differ in size, shape, or distribution and are associated with melanoma. Values: `regular`, `irregular`, `absent` |
-| `blue_whitish_veil` | A confluent structureless blue-white area overlying a raised portion of the lesion, corresponding histopathologically to compact orthokeratosis above a hyperpigmented epidermis with dermal melanophages. It is one of the most specific dermoscopic features of invasive melanoma. Values: `present`, `absent` |
-| `vascular_structures` | Blood vessel morphologies visible under dermoscopy, whose patterns reflect the vascular architecture of different lesion types. Comma vessels are curved and associated with dermal nevi, arborizing vessels are branching and typical of basal cell carcinoma, hairpin vessels are looped and seen in keratinizing tumors, dotted vessels appear as small red dots common in melanoma and Spitz nevi, and linear irregular vessels are poorly organized and associated with amelanotic melanoma. Values: `comma`, `wreath`, `arborizing`, `hairpin`, `dotted`, `within_regression`, `linear_irregular`, `absent` |
+| `blue_whitish_veil` | A focal, confluent blue pigmentation with an overlying white ground-glass haze, present over a raised portion of the lesion. It is one of the most specific dermoscopic features of invasive melanoma. Values: `present`, `absent` |
+| `vascular_structures` | Blood vessel morphologies visible under dermoscopy whose patterns vary across lesion types. Comma vessels are curved and specific to dermal nevi, dotted vessels are small red dots associated with melanoma and Spitz nevi, hairpin vessels are looped and seen in keratinizing lesions, and linear irregular vessels are poorly organized and linked to amelanotic melanoma. Values: `comma`, `wreath`, `arborizing`, `hairpin`, `dotted`, `within_regression`, `linear_irregular`, `absent` |
 | `derm` | Filename of the dermoscopic image (relative to `images/`). |
 
-```
+---
 
 ## Split File Format
 
@@ -141,7 +141,7 @@ If you use Derm7pt+ in your research, please cite our paper:
 }
 ```
 
-Derm7pt+ is derived from the original Derm7pt dataset. If you use the images or metadata, we would kindly ask you to cite the original dataset paper:
+Derm7pt+ is derived from the original Derm7pt dataset. If you use the images or metadata, please also cite the original dataset paper:
 
 ```bibtex
 @article{Kawahara2018-7pt,
