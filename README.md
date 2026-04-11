@@ -141,23 +141,6 @@ If you use Derm7pt+ in your research, please cite our paper:
 }
 ```
 
-Derm7pt+ is derived from the original Derm7pt dataset. If you use the images or metadata, please also cite the original dataset paper:
-
-```bibtex
-@article{Kawahara2018-7pt,
-  author    = {Kawahara, Jeremy and Daneshvar, Sara and Argenziano, Giuseppe and Hamarneh, Ghassan},
-  title     = {Seven-Point Checklist and Skin Lesion Classification Using Multitask Multimodal Neural Nets},
-  journal   = {IEEE Journal of Biomedical and Health Informatics},
-  volume    = {23},
-  number    = {2},
-  pages     = {538--546},
-  year      = {2019},
-  doi       = {10.1109/JBHI.2018.2824327}
-}
-```
-
-The original Derm7pt images are distributed under a CC BY-NC-ND 4.0 license and can be downloaded from [derm.cs.sfu.ca](http://derm.cs.sfu.ca).
-
 ---
 
 ## License
