@@ -4,7 +4,7 @@
 
 ## Overview
 
-Concept Bottleneck Models route all predictions through a layer of clinically interpretable concepts. When a dataset contains concept-level inconsistencies — where identical concept profiles map to conflicting diagnosis labels — the bottleneck becomes unresolvable, imposing a hard accuracy ceiling regardless of backbone architecture or training strategy.
+Concept Bottleneck Models route all predictions through a layer of clinically interpretable concepts. When a dataset contains concept-level inconsistencies (where identical concept profiles map to conflicting diagnosis labels) the bottleneck becomes unresolvable, imposing a hard accuracy ceiling regardless of backbone architecture or training strategy.
 
 We apply **rough set theory** to the Derm7pt dermoscopy benchmark and find that:
 
